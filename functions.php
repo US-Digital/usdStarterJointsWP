@@ -48,3 +48,6 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 
 // Add Async/Defer for scripts
 require_once(get_template_directory().'/functions/async-defer.php');
+
+// Add shortcodes functions file
+require_once(get_template_directory().'/functions/shortcodes.php');
