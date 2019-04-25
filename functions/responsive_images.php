@@ -43,3 +43,10 @@ function acf_responsive_img($image_id,$image_size,$max_width,$i,$y){
 		echo 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
 	}
 }
+
+/*
+For usage
+Example
+$i = loop iteration
+<img <?php acf_responsive_img($image['id'], 'xxxl', '3000px',$i, 1); ?> alt="<?php echo $image['alt'] ?>">
+*/
