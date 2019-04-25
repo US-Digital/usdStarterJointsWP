@@ -46,6 +46,9 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/functions/admin.php'); 
 
+// Add custom theme settings page
+// require_once(get_template_directory().'/functions/theme_settings.php');
+
 // Add Async/Defer for scripts
 require_once(get_template_directory().'/functions/async-defer.php');
 
