@@ -49,5 +49,8 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // Add Async/Defer for scripts
 require_once(get_template_directory().'/functions/async-defer.php');
 
+// Add more image sizes and responsive images for ACF
+require_once(get_template_directory().'/functions/responsive_images.php');
+
 // Add shortcodes functions file
 require_once(get_template_directory().'/functions/shortcodes.php');
