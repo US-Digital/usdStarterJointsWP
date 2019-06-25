@@ -11,6 +11,7 @@ function aw_custom_add_image_sizes() {
     add_image_size( 'xl', 1200, 9999 ); // 1200px wide unlimited height
     add_image_size( 'xxl', 2000, 9999 ); // 2000px wide unlimited height
     add_image_size( 'xxxl', 3000, 9999 ); // 3000px wide unlimited height
+    add_image_size( 'super', 4000, 9999 ); // 4000px wide unlimited height
 }
 
 add_filter( 'image_size_names_choose', 'aw_custom_add_image_size_names' );

@@ -50,10 +50,10 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // require_once(get_template_directory().'/functions/theme_settings.php');
 
 // Add Async/Defer for scripts
-require_once(get_template_directory().'/functions/async-defer.php');
+require_once(get_template_directory().'/functions/library/async-defer.php');
 
 // Add more image sizes and responsive images for ACF
-require_once(get_template_directory().'/functions/responsive_images.php');
+require_once(get_template_directory().'/functions/library/responsive_images.php');
 
 // Add shortcodes functions file
-require_once(get_template_directory().'/functions/shortcodes.php');
+require_once(get_template_directory().'/functions/library/shortcodes.php');
