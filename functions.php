@@ -46,14 +46,22 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/functions/admin.php'); 
 
+// US DIGITAL FUNCTIONS LIBRARY
+
 // Add custom theme settings page
-// require_once(get_template_directory().'/functions/theme_settings.php');
+// require_once(get_template_directory().'/functions/library/theme_settings.php');
 
 // Add Async/Defer for scripts
 require_once(get_template_directory().'/functions/library/async-defer.php');
+
+// Add CF7 removal of recpatcha badge
+// require_once(get_template_directory().'/functions/library/cf7-recaptcha-hide.php');
 
 // Add more image sizes and responsive images for ACF
 require_once(get_template_directory().'/functions/library/responsive_images.php');
 
 // Add shortcodes functions file
 require_once(get_template_directory().'/functions/library/shortcodes.php');
+
+// Add latest posts functions file
+require_once(get_template_directory().'/functions/library/latest_posts.php');

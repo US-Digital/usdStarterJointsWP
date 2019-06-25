@@ -1,0 +1,23 @@
+.parallax-container {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111111;
+  position: relative;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translateZ(-1px);
+}
+
+.parallax-overlay {
+  position: relative;
+  transform: translateZ(0);
+}
+
+// .parallax-window {
+//   min-height: 400px;
+//   background: transparent;
+// }
