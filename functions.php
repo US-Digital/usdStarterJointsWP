@@ -51,6 +51,12 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // Add custom theme settings page
 // require_once(get_template_directory().'/functions/library/theme_settings.php');
 
+// Add custom contact form usd_contact_form()
+// require_once(get_template_directory().'/functions/library/custom-contact-form.php');
+
+// Add custom feedback form usd_contact_form() with recording responses in CSV
+// require_once(get_template_directory().'/functions/library/custom-feedback-form.php');
+
 // Add Async/Defer for scripts
 require_once(get_template_directory().'/functions/library/async-defer.php');
 
