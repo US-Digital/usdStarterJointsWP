@@ -1,4 +1,5 @@
-<? 
+<?php
+
 // Async load
 function usdigital_async_scripts($url)
 {
