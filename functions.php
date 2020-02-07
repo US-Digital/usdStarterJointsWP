@@ -48,6 +48,9 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 
 // US DIGITAL FUNCTIONS LIBRARY
 
+// Add plugins to be included
+require_once(get_template_directory().'/functions/library/included-plugins.php');
+
 // Add custom theme settings page
 // require_once(get_template_directory().'/functions/library/theme_settings.php');
 
