@@ -45,7 +45,7 @@ function us_digital_register_required_plugins() {
 			'slug'         => 'advanced-custom-fields-pro',
 			'source'       => 'https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k=b3JkZXJfaWQ9NDU5NDJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTEyLTEwIDA5OjI1OjE1',
 			'required'     => true,
-			// 'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+			'external_url' => 'https://www.advancedcustomfields.com/my-account/', // If set, overrides default API URL and points to an external URL.
 		),
 		// Require WP Rollback Worker
 		array(
