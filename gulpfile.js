@@ -16,6 +16,9 @@ const LOCAL_URL = 'http://localhost:8888/wordpress'
 // Set path to Foundation files
 const FOUNDATION = 'node_modules/foundation-sites'
 
+// Add external library files to be packaged into scripts.js
+const MIXITUP = 'node_modules/mixitup/dist/mixitup.js'
+
 // Select Foundation components, remove components project will not use
 const SOURCE = {
   scripts: [
@@ -50,6 +53,7 @@ const SOURCE = {
     // FOUNDATION + '/dist/js/plugins/foundation.tooltip.js',
 
     // Place custom JS here, files will be concantonated, minified if ran with --production
+    MIXITUP,
     'assets/scripts/js/**/*.js',
   ],
 

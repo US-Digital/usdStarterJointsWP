@@ -47,7 +47,7 @@ function us_digital_register_required_plugins() {
 			'required'     => true,
 			'external_url' => 'https://www.advancedcustomfields.com/my-account/', // If set, overrides default API URL and points to an external URL.
 		),
-		// Require WP Rollback Worker
+		// Require WP Rollback
 		array(
 			'name'      => 'Plugin Rollback',
 			'slug'      => 'wp-rollback',
