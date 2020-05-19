@@ -18,6 +18,7 @@ const FOUNDATION = 'node_modules/foundation-sites'
 
 // Add external library files to be packaged into scripts.js
 const MIXITUP = 'node_modules/mixitup/dist/mixitup.js'
+const SLICK = 'node_modules/slick-carousel/slick/'
 
 // Select Foundation components, remove components project will not use
 const SOURCE = {
@@ -54,11 +55,18 @@ const SOURCE = {
 
     // Place custom JS here, files will be concantonated, minified if ran with --production
     MIXITUP,
+    SLICK + 'slick.min.js',
     'assets/scripts/js/**/*.js',
   ],
 
   // Scss files will be concantonated, minified if ran with --production
-  styles: 'assets/styles/scss/**/*.scss',
+  styles: [
+    // Include any external library CSS needed
+    SLICK + 'slick.scss',
+
+    // Point to SCSS folder
+    'assets/styles/scss/**/*.scss',
+  ],
 
   // Images placed here will be optimized
   images: 'assets/images/src/**/*',
