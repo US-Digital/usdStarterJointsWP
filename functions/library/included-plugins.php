@@ -31,8 +31,54 @@ function us_digital_register_required_plugins() {
 			'name'      => 'Wordfence Security',
 			'slug'      => 'wordfence',
 			'required'  => false,
+		),
+		// Recommend Query Monitor
+		array(
+			'name'      => 'Developer Helper - Query Monitor',
+			'slug'      => 'query-monitor',
+			'required'  => false,
         ),
-        
+		// Recommend Stream User Tracking
+		array(
+			'name'      => 'Stream - Admin User Action Tracking',
+			'slug'      => 'stream',
+			'required'  => false,
+        ),
+		// Recommend User Role Editor 
+		array(
+			'name'      => 'User Role Editor',
+			'slug'      => 'user-role-editor',
+			'required'  => false,
+        ),
+		// Recommend WP Cron Control
+		array(
+			'name'      => 'WP Crontrol',
+			'slug'      => 'wp-crontrol',
+			'required'  => false,
+		),
+		
+		// SEO Plugins and helpers
+		// Recommend Yoast SEO
+		array(
+			'name'      => 'Yoast',
+			'slug'      => 'wordpress-seo',
+			'required'  => false,
+		),
+		// Recommend Redirection 
+		array(
+			'name'      => 'Redirection - 301 and 404',
+			'slug'      => 'redirection',
+			'required'  => false,
+		),
+		// Recommend ACF Content Analysis for Yoast 
+		array(
+			'name'      => 'ACF Field Content Analysis for Yoast',
+			'slug'      => 'acf-content-analysis-for-yoast-seo',
+			'required'  => false,
+		),
+
+
+        // Development Requirements for all builds
         // Require Classic Editor
 		array(
 			'name'      => 'Classic Editor',
@@ -51,6 +97,18 @@ function us_digital_register_required_plugins() {
 		array(
 			'name'      => 'Plugin Rollback',
 			'slug'      => 'wp-rollback',
+			'required'  => true,
+		),
+		// Require Mailgun
+		array(
+			'name'      => 'Mailgun',
+			'slug'      => 'mailgun',
+			'required'  => true,
+		),
+		// Require SVG Support
+		array(
+			'name'      => 'SVG Support',
+			'slug'      => 'svg-support',
 			'required'  => true,
 		),
 
