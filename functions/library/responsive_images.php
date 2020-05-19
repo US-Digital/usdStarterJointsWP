@@ -25,29 +25,3 @@ function aw_custom_add_image_size_names( $sizes ) {
     'xxxl' => __( '3x Extra Large' ),
   ) );
 }
-
-function acf_responsive_img($image_id,$image_size,$max_width,$i,$y){
-	// check the image ID is not blank
-	if($image_id != '') {
-        // Check the loop to see if image in loop needs to be defered
-        if($i <= $y) {
-            // Load
-            $image_src = wp_get_attachment_image_url($image_id, $image_size);
-        } else {
-            $image_src = "";
-        }
-        // set the default src image size
-		$image_src = wp_get_attachment_image_url( $image_id, $image_size );
-		// set the srcset with various image sizes
-		$image_srcset = wp_get_attachment_image_srcset( $image_id, $image_size );
-		// generate the markup for the responsive image
-		echo 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
-	}
-}
-
-/*
-For usage
-Example
-$i = loop iteration
-<img <?php acf_responsive_img($image['id'], 'xxxl', '3000px',$i, 1); ?> alt="<?php echo $image['alt'] ?>">
-*/
